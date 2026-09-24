@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fish&amp;chips</key>
+	<string>5 &lt; 6 &amp; 7 &gt; 2 &quot;quoted&quot; &apos;apos&apos; &#8364; &#x1F600;</string>
+	<key>literal-entity-text</key>
+	<string>&amp;amp; &amp;lt; &amp;gt;</string>
+	<key>tag-like</key>
+	<string>&lt;tag attr=&quot;a&amp;b&quot;&gt;</string>
+</dict>
+</plist>
