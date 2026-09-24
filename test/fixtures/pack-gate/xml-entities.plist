@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>plain</key>
+	<string>entities</string>
+	<key>escaped &amp; key</key>
+	<string>fish &amp; chips &lt;tag&gt; &quot;quoted&quot; &apos;single&apos;</string>
+	<key>numeric</key>
+	<string>amp&#38;lt&#60;gt&#62;</string>
+	<key>mix&#33;</key>
+	<string>5 &gt; 3 &amp;&amp; 2 &lt; 4</string>
+</dict>
+</plist>
