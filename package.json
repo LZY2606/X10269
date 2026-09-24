@@ -1,0 +1,72 @@
+{
+  "name": "plist",
+  "description": "Apple's property list parser/builder for Node.js and browsers",
+  "version": "5.0.0",
+  "type": "module",
+  "author": "Nathan Rajlich <nathan@tootallnate.net>",
+  "contributors": [
+    "Hans Huebner <hans.huebner@gmail.com>",
+    "Pierre Metrailler",
+    "Mike Reinstein <reinstein.mike@gmail.com>",
+    "Vladimir Tsvang",
+    "Mathieu D'Amours"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TooTallNate/plist.js.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "apple",
+    "browser",
+    "mac",
+    "plist",
+    "parser",
+    "xml"
+  ],
+  "exports": {
+    ".": {
+      "browser": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.browser.js"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "default": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.10",
+    "xmlbuilder": "^15.1.1"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build",
+    "ci:publish": "changeset publish"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "dompurify": ">=3.4.2"
+    }
+  }
+}
